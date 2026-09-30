@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+
+<html lang="en" data-theme="dark">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Publications | John (Jack) Peters</title>
+
+<meta name="author" content="John (Jack) Peters">
+
+<meta name="description" content="Publications and intellectual property - John (Jack) Peters">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="stylesheet.css">
+
+<style>
+
+:root{--bg:#000;--text:#eee;--muted:#aaa;--link:#58a6ff;--box:#171717;--border:#333}
+
+html[data-theme="light"]{--bg:#fff;--text:#222;--muted:#666;--link:#1772d0;--box:#f2f2f2;--border:#ddd}
+
+body{background:var(--bg);color:var(--text);transition:background .2s,color .2s}
+
+a{color:var(--link)}
+
+.topbar{width:100%;max-width:1100px;margin:0 auto;padding:18px 20px 0;box-sizing:border-box;display:flex;justify-content:flex-end;align-items:center;gap:18px;font-size:14px}
+
+.topbar a{color:var(--text);text-decoration:none}.topbar a:hover{color:var(--link)}
+
+.theme-toggle{border:0;background:transparent;color:var(--text);cursor:pointer;font-size:19px;padding:2px 0 2px 4px}
+
+.page-title{padding:28px 16px 4px}
+
+.section-heading{padding:12px 16px 2px}
+
+.pub-table{width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:auto}
+
+.pub-thumb-cell{padding:16px;width:40%;vertical-align:middle}
+
+.pub-content-cell{padding:8px;width:60%;vertical-align:middle}
+
+.pub-placeholder{width:100%;height:145px;background:var(--box);border:1px solid var(--border);color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center;box-sizing:border-box}
+
+.pub-title{font-weight:700}
+
+.pub-meta{color:var(--muted);margin-top:3px}
+
+.pub-links{margin-top:4px}
+
+.compact-list{padding:0 16px 0 16px}
+
+.compact-entry{margin:0 0 16px 0}
+
+@media(max-width:600px){
+
+.topbar{justify-content:center;gap:14px}
+
+.pub-table,.pub-table tbody,.pub-table tr,.pub-table td{display:block;width:100%!important;max-width:100%!important}
+
+.pub-thumb-cell{padding:10px 16px 2px}
+
+.pub-content-cell{padding:8px 16px 16px}
+
+.pub-placeholder{height:180px}
+
+}
+
+.work-image-container{position:relative;width:100%;aspect-ratio:2 / 1;overflow:hidden;background:var(--bg)}
+.work-image-container.tall{aspect-ratio:3 / 3}
+.work-image-container.midTall{aspect-ratio: 1.3 / 1}
+.work-image-container.midmidTall{aspect-ratio: 1.1 / 1}
+.work-image-container.superTall{aspect-ratio: 0.9 / 1}
+.work-image-container.workflow{aspect-ratio:1.6 / 1}
+.work-image-container.wideBoy{aspect-ratio:1.6 / 1}
+.work-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;opacity:1;transition:opacity .4s ease}
+.white-background{background-color:white}
+.work-image-hover{opacity:0}
+.work-image-container:hover .work-image:first-child{opacity:0}
+.work-image-container:hover .work-image-hover{opacity:1}
+.video-zoom {
+  object-fit: contain;
+  transform: scale(3.0);
+}
+</style>
+
+<script>
+
+(function(){const t=localStorage.getItem('theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')})();
+
+</script>
+
+</head>
+
+<body>
+
+<nav class="topbar" aria-label="Primary navigation">
+
+<a href="index.html">Home</a>
+
+<a href="publications.html">Publications</a>
+
+<a href="data/Jack_Peters_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch color theme">☀</button>
+
+</nav>
+
+<table style="width:100%;max-width:1100px;border:0;border-spacing:0;border-collapse:separate;margin:auto"><tbody>
+
+<tr><td style="padding:0">
+
+<div class="page-title">
+
+<p class="name" style="text-align:left;margin-bottom:6px;">Publications</p>
+
+</div>
+
+<div class="section-heading"><h2>Journal Articles</h2></div>
+
+<table class="pub-table"><tbody>
+
+
+
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container wideBoy">
+ <img
+ src="images/mri_robot/bGM_Fig1.jpg"
+ alt="bGM Robotic LITT concept"
+ class="work-image">
+ <img
+ src="images/mri_robot/bGM_Fig3.jpg"
+ alt="hover figure"
+ class="work-image work-image-hover">
+ </div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">Optimization of Nonlinear Trajectories for Robotic Treatment of Butterfly Gliomas</div>
+
+<div><strong>John E. Peters</strong>, Abby M. Grillo, Nithin S. Kumar, Mahshid Mansouri, Brian J. Williams, Joseph S. Neimat, Eric J. Barth</div>
+
+<div class="pub-meta"><em>Operative Neurosurgery</em>. In preparation.</div>
+
+<p>This work presents a feasibility analysis of delivering curvilinear MR-guided laser interstitial thermal therapy (MRgLITT) 
+  for butterfly gliomas (bGM), a geometrically complex and difficult to treat brain tumor, using concentric tube robots (CTR). The goal
+  is to answer a clinically relevant translation question:  is near-total, conformal ablation achievable from a single cranial access point, 
+  and what robotic design and actuation parameters are required? To answer this, we created a design optimization and ablation planning 
+  framework for a minimally invasive, continuum robot for neurosurgery.</p>
+
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td class="pub-thumb-cell">
+ <div class="work-image-container tall">
+ <img
+ src="images/mri_robot/BenchtopResults2.png"
+ alt="representative ablation result"
+ class="work-image">
+
+ <video
+ class="work-image work-image-hover"
+ muted
+ autoplay
+ loop
+ playsinline>
+ <source
+ src="images/mri_robot/thermometry_retraction3_ablation1.mp4"
+ type="video/mp4">
+ </video>
+</div>
+</td>
+
+<td class="pub-content-cell">
+<div class="pub-title">Conforming to Curvature: Improving Hippocampal Ablation Coverage with Robotic, Curvilinear, Directional MRgLITT</div>
+<strong>John E. Peters</strong>, Nithin S. Kumar, Abby Grillo, Mahshid Mansouri, Saikat Sengupta, Sarah Garrow, Kerrin Sunshine, William A. Grissom, Robert J. Webster III, Eric J. Barth
+<div class="pub-meta">IEEE Transactions on Biomedical Engineering. In preparation.</div>
+<p>In this work we extended the neurosurgical robot from curved needle delivery to conformal therapy by integrating a
+  directional laser probe and real-time MR thermometry monitoring. This enabled us to achieve 84.2% mean hippocampal ablation
+  coverage versus the reported 56% clinical average in tissue-mimicking phantoms.</p>
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container">
+ <img
+ src="images/mri_robot/Fig1.png"
+ alt="Illustration of the transforaminal curvilinear approach to the hippocampus"
+ class="work-image">
+ <img
+ src="images/mri_robot/Fig2.png"
+ alt="MRI-compatible robotic system and experimental setup"
+ class="work-image work-image-hover">
+ </div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">An MRI-Guided Robotic System to Improve Hippocampal Access for Epilepsy Interventions</div>
+<strong>John E. Peters</strong>, Abby M. Grillo, Mahshid Mansouri, Daniel S. Esser, Sarah Garrow, Nithin S. Kumar, William A. Grissom, Dario J. Englot, Joseph S. Neimat, Robert J. Webster III, Eric J. Barth
+<div class="pub-meta">Annals of Biomedical Engineering. In review.</div>
+<div class="pub-links"><a href="https://arxiv.org/abs/2609.13572" target="_blank" rel="noopener">Paper</a></div>
+<p>Designed and experimentally validated a compact 6-DOF, MRI-compatible robotic system for minimally invasive neurosurgery.&#x20;
+This system was designed to improve hippocampal access, a common seizure source in drug-resistant epilepsy, by delivering
+a curved needle-like laser ablator through a natural opening in the skull base. Both the delivery path and the curved nature
+of the needle improve upon current clinical straight-line laser interstitial thermal therapy (LITT) as measured by&#x20;
+hippocampal cannulation percentage. In MRI-guided experiments, we achieved a mean cannulation percentage of 83.5% exceeding
+reported clinical averages of 50-60%. Seizure control is believed by physicians to be a function of hippocampal
+volume treated, and our system provides a means of treating a greater volume of the hippocampus with LITT-based interventions.</p>
+
+</td>
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+
+<div class="work-image-container workflow">
+
+<img
+
+src="images/mri_robot/WF_Workflow.png"
+
+alt="workflow"
+
+class="work-image white-background">
+
+<img
+
+src="images/mri_robot/WF_ExpSetup.png"
+
+alt="exp setup"
+
+class="work-image work-image-hover">
+
+</div>
+
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">MR-Guided Robotic Transforaminal Laser Interstitial Thermal Therapy for Epilepsy: Initial In-Scanner Cadaver Experience</div>
+
+Abby Grillo, <strong>John E. Peters</strong>, Mahshid Mansouri, Sarah Garrow, Kerrin Sunshine, Michael Staudt, Anuj Sharma, William A. Grissom, Eric J. Barth, Robert J. Webster III
+
+<div class="pub-meta">IEEE Transactions on Biomedical Engineering. In review.</div>
+
+<p>In this research, we took a step towards clinical translation of our system by testing our envisioned robotic workflow in&#x20;
+
+human cadavers. This involved end-to-end validation of the research in a clinical setting with clinician stakeholders at every
+
+step.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+
+<div class="work-image-container">
+
+<img
+
+src="images/soft_robotics/tendonDrivenSpirob_Exp.jpg"
+
+alt="workflow"
+
+class="work-image white-background">
+
+<img
+
+src="images/soft_robotics/tendonDrivenSpirob_Exp.jpg"
+
+alt="exp setup"
+
+class="work-image work-image-hover">
+
+</div>
+
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">Real-Time Data-Driven Task-Space Control of Tendon-Driven Continuum Robots</div>
+
+Nithin S. Kumar, <strong>John E. Peters</strong>, Eric J. Barth.
+
+<div class="pub-meta">ASME/IEEE Transactions on Mechatronics. In preparation.</div>
+
+<p>This work extended our previous data-driven approach to 3D task space control of tendon-driven continuum robots. A novel
+
+modeling and control framework was developed for these robots, learning static mappings from actuator commands to tip&#x20;
+
+position and orientation from just 600 s of experimental data. The learned models are exploited for optimization-based
+
+feedforward inversion and Jacobian feedback, enabling real-time millimeter-scale tracking without an explicit&#x20;
+
+mechanics-based model. These results demonstrate that learned static input-output models provide an accurate and
+
+computationally efficient foundation for real-time continuum-robot task-space control.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+
+<div class="work-image-container">
+
+<img
+
+src="images/soft_robotics/ALDC_trackingResults.png"
+
+alt="workflow"
+
+class="work-image white-background">
+
+<img
+
+src="images/soft_robotics/ALDSC_expSetup.jpg"
+
+alt="exp setup"
+
+class="work-image work-image-hover">
+
+</div>
+
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">Data-driven Dynamic Modeling and Control of Pneumatic Soft Actuators with Stability Analysis</div>
+
+Nithin S. Kumar, <strong>John E. Peters</strong>, Thomas Beckers, Eric J. Barth.
+
+<div class="pub-meta">ASME Letters in Dynamic Systems and Control. Accepted. 2026.</div>
+
+<p> Continuum robots offer inherent compliance and dexterity, but their nonlinear deformation and coupled actuation make
+
+accurate modeling and task-space control challenging. This work developed a data-driven modeling and control framework
+
+for pneumatically actuated, soft robots.  Using experimentally learned, nonlinear feedforward maps combined with
+
+EDMDc residual dynamics we achieved 2 mm RMSE positional control of the robot tip. This was demonstrated on shape rich
+
+trajectories with less than 10 mm RMSE at tip speeds exceeding 100 mm/s. The learned model also enables closed-loop
+
+stability prediction without requiring an explicit first-principles dynamic model.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container">
+<img
+src="images/soft_robotics/Fig1_ModelOverlay.jpg"
+alt="workflow"
+class="work-image white-background">
+<img
+src="images/soft_robotics/fig5_expsetup.png"
+alt="exp setup"
+class="work-image work-image-hover">
+</div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">Constrained Lagrangian-Based, Nonholonomic Modeling and Validation of a Pneumatically Actuated Wheeled Soft Robot</div>
+
+Nithin S. Kumar, <strong>John E. Peters</strong>, Sung Y. Kim, Joshua Gaston, D. Caleb Rucker, Eric J. Barth
+
+<div class="pub-meta">Journal of Mechanisms and Robotics. Published. 2026.</div>
+<div class="pub-links"><a href="https://asmedigitalcollection.asme.org/mechanismsrobotics/article/18/4/041002/1230451" target="_blank" rel="noopener">Paper</a></div>
+<p>In this work, we designed a pneumatically actuated, wheeled soft robot and a constrained, Lagrangian-based model to accurately
+capture its highly dynamic, non-holonomic locomotion. The robot achieved speeds up to 22 cm/s (1.38 body lengths/s) and demonstrated
+forward, reverse, and circular locomotion. The modeling framework was validated across three different designs, accurately
+reproducing their experimentally observed configuration and velocity trends.</p>
+
+</td>
+
+</tr>
+
+</tbody></table>
+
+<div class="section-heading"><h2>Conference Papers</h2></div>
+
+<table class="pub-table"><tbody>
+
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container midmidTall">
+<img
+src="images/mri_robot/AG_HSMR_Fig1.png"
+alt="workflow"
+class="work-image white-background">
+
+<video
+ class="work-image work-image-hover video-zoom"
+ muted
+ autoplay
+ loop
+ playsinline>
+ <source
+ src="images/mri_robot/AimingArmRobot_StepperAct_Video.mp4"
+ type="video/mp4">
+ </video>
+
+</div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">A 6-DOF Positioning Platform for MR-Guided, In-Scanner Transforaminal Epilepsy Interventions</div>
+
+<div>A. M. Grillo, <strong>John E. Peters</strong>, Eric J. Barth, Robert J. Webster III</div>
+
+<div class="pub-meta"><em>Hamlyn Symposium on Medical Robotics</em>, 2025.</div>
+<div class="pub-links"><a href="https://static1.squarespace.com/static/661dc8f29cd91731ed8c0c8c/t/68ed487fe5f872067861ad82/1760381055864/Grillo_HSMR_2025.pdf" target="_blank" rel="noopener">Paper</a></div>
+<p>This work developed a MRI-compatible parallel platform that supported the robotic system and enabled clinician adjustment of the mechanically enforced remote center of motion (RCM). The goal is to place the RCM at the entry point into the brain, the foramen ovale, allowing the robot to pivot about this point for aiming purposes while avoiding tissue shear.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container midTall">
+<img
+src="images/mri_robot/JP_HSMR_Fig1.jpg"
+alt="workflow"
+class="work-image">
+<img
+src="images/mri_robot/JP_HSMR_Fig3.jpg"
+alt="exp setup"
+class="work-image work-image-hover">
+</div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">Toward In-Scanner Transforaminal Epilepsy Interventions: A Compact MR-Safe Concentric Tube Actuation System</div>
+
+<div><strong>John E. Peters</strong>, Daniel Esser, Abby Grillo, Nithin S. Kumar, Robert J. Webster III, Eric J. Barth</div>
+
+<div class="pub-meta"><em>Hamlyn Symposium on Medical Robotics</em>, 2024.</div>
+<div class="pub-links"><a href="https://static1.squarespace.com/static/661dc8f29cd91731ed8c0c8c/t/66e300f37b23ad3de3d3f8a3/1726152947712/Toward+In+Scanner+Transforamenal+Epilepsy+Interventions_compressed+%281%29.pdf" target="_blank" rel="noopener">Paper</a></div>
+<p>This work focused on the design and integration of a compact, 4-DOF actuation system that eliminates added length associated with transmission elements and directly manipulates the needle and laser fiber.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container midTall">
+<img
+src="images/mri_robot/FEAs_EB_modified.PNG"
+alt="fea actuators"
+class="work-image white-background">
+
+<video
+ class="work-image work-image-hover"
+ muted
+ autoplay
+ loop
+ playsinline>
+ <source
+ src="images/mri_robot/CTAU_StepperAct_Video.mp4"
+ type="video/mp4">
+ </video>
+
+</div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">A Highly Compact, Multi-Material, Fluid Powered Actuation System for MRI-Guided Surgical Intervention</div>
+
+<div><strong>John E. Peters</strong>, Abby M. Grillo, Daniel S. Esser, Sarah J. Garrow, Nithin S. Kumar, Tyler Ball, Robert Naftel, Dario J. Englot, Joseph Neimat, William A. Grissom, Robert J. Webster, Eric J. Barth</div>
+
+<div class="pub-meta"><em>ASME/Bath Symposium on Fluid Power and Motion Control</em>, 2023.</div>
+<div class="pub-links"><a href="https://asmedigitalcollection.asme.org/FPST/proceedings-abstract/FPMC2023/87431/1170194" target="_blank" rel="noopener">Paper</a></div>
+<p>This paper focused on the design of compact, pneumatic actuators that could be used inside of the scanner bore. These 3D printed, nylon
+  actuators operate in a safe, inchworm-like manner by slowly rotating and advancing needles into brain tissue.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container workflow">
+<img
+src="images/mri_robot/SPIE2023_Fig1.jpg"
+alt="workflow"
+class="work-image">
+<img
+src="images/mri_robot/SPIE2023_Fig2.jpg"
+alt="exp setup"
+class="work-image work-image-hover">
+</div>
+</td>
+<td class="pub-content-cell">
+
+<div class="pub-title">Design Considerations for Robotic, MRI-Guided, Trans-Foramen Ovale Access to the Brain</div>
+
+<div>Abby M. Grillo, <strong>John E. Peters</strong>, Daniel S. Esser, Sarah J. Garrow, Tyler Ball, Robert Naftel, Dario J. Englot, Joseph Neimat, William A. Grissom, Eric J. Barth, Robert J. Webster III</div>
+
+<div class="pub-meta"><em>SPIE</em>, 2023.</div>
+<div class="pub-links"><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12466/2655533/Design-considerations-for-robotic-MRI-guided-trans-foramen-ovale-access/10.1117/12.2655533.full?casa_token=nCXTs4xVEMEAAAAA:qMkGctgA393yFp3jbW3Mx-GHFLsh7usTe6N2KlvCeC1Qnobxtr2Qen3sinCIOqVQGN_6ES5QfVs" target="_blank" rel="noopener">Paper</a></div>
+<p>This research explored what design requirements must be considered when designing a robot for transforaminal access to the brain within the confined space of an MRI scanner bore.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container superTall">
+<img
+src="images/mri_robot/SG_Poster_Fig3.png"
+alt="workflow"
+class="work-image">
+<img
+src="images/mri_robot/SG_Poster_Fig1.png"
+alt="exp setup"
+class="work-image work-image-hover">
+</div>
+</td>
+<td class="pub-content-cell">
+
+<div class="pub-title">MR Thermometry by Quadratic Phase MR Fingerprinting</div>
+
+<div>Sarah J. Garrow, <strong>John E. Peters</strong>, Abby M. Grillo, Kathryn E. Keenan, Mark A. Griswold, William A. Grissom</div>
+
+<div class="pub-meta"><em>Proceedings of the 31st Annual Meeting of the International Society for Magnetic Resonance in Medicine (ISMRM)</em>, 2023.</div>
+<div class="pub-links"><a href="https://cai2r.net/wp-content/uploads/2023/12/P32-Garrow-i2i-2023.pdf" target="_blank" rel="noopener">Paper</a></div>
+<p>This work explored new ways of measuring/reconstructing MRI-detected temperature changes via MR-thermometry that is faster and less sensitive to motion than prior methods.</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container midTall">
+<img
+src="images/mri_robot/DS_HSMR_Fig1.jpg"
+alt="workflow"
+class="work-image">
+<img
+src="images/mri_robot/DS_HSMR_Fig2.jpg"
+alt="exp setup"
+class="work-image work-image-hover">
+</div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">Robotic Curvilinear Laser Thermal Therapy Probe for Transforaminal Hippocampotomy</div>
+
+<div>Daniel S. Esser, <strong>John E. Peters</strong>, Abby M. Grillo, Eric J. Barth, Robert J. Webster III</div>
+
+<div class="pub-meta"><em>Hamlyn Symposium on Medical Robotics</em>, 2022.</div>
+<div class="pub-links"><a href="https://static1.squarespace.com/static/661dc8f29cd91731ed8c0c8c/t/66b2847de0a1ab5d1865ef0d/1722975358121/RoboticLaserThermalTherapyDanielEsser.pdf" target="_blank" rel="noopener">Paper</a></div>
+<p>This paper was a first step towards ablating along patient-specific, curvilinear trajectories with a helical ablation probe.</p>
+
+</td>
+
+</tr>
+
+</tbody></table>
+
+
+
+
+<div class="section-heading"><h2>Patents</h2></div>
+
+<table class="pub-table"><tbody>
+
+<tr>
+
+<td class="pub-thumb-cell">
+<div class="work-image-container workflow">
+<img
+src="images/mri_robot/PatentDrawing_NDLDriver.png"
+alt="workflow"
+class="work-image">
+<img
+src="images/mri_robot/PatentDrawing_NDLDriver_crossSection.png"
+alt="exp setup"
+class="work-image work-image-hover">
+</div>
+</td>
+
+<td class="pub-content-cell">
+
+<div class="pub-title">Robotic Surgical System, Apparatus, and Method</div>
+
+<div><strong>John E. Peters</strong>, Daniel Solomon Esser, Eric John Barth, Robert James Webster, Abby M. Grillo</div>
+
+<div class="pub-meta">U.S. Patent Application Publication US20260000870A1, Jan. 1, 2026.</div>
+<br><a href="https://patents.google.com/patent/US20260000870A1/en?oq=US20260000870A1" target="_blank" rel="noopener">Patent</a>
+
+
+</td>
+
+</tr>
+
+</tbody></table>
+
+
+
+
+
+<table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto"><tbody>
+
+<tr><td style="padding:28px 16px 16px">
+
+<p style="text-align:right;font-size:small;">Website template adapted from <a href="https\://jonbarron.info/" target="_blank" rel="noopener">Jon Barron</a>.</p>
+
+</td></tr>
+
+</tbody></table>
+
+</td></tr></tbody></table>
+
+<script>
+
+const b=document.getElementById('theme-toggle');
+
+function sync(){const dark=document.documentElement.getAttribute('data-theme')!=='light';b.innerHTML=dark?'☀':'☾';b.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode')}
+
+b.addEventListener('click',()=>{const next=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';document.documentElement.setAttribute('data-theme',next);localStorage.setItem('theme',next);sync()});
+
+sync();
+
+</script>
+
+</body>
+
+</html>

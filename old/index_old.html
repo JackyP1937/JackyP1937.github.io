@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<title>Jack Peters</title>
+<meta name="author" content="Jack Peters">
+<meta name="description" content="Jack Peters - Robotics, Controls, and Mechatronics">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+:root{--bg:#000;--text:#eee;--muted:#aaa;--link:#58a6ff;--box:#171717;--border:#333}
+html[data-theme="light"]{--bg:#fff;--text:#222;--muted:#666;--link:#1772d0;--box:#f2f2f2;--border:#ddd}
+body{background:var(--bg);color:var(--text);transition:background .2s,color .2s}
+a{color:var(--link)}
+.topbar{width:100%;max-width:800px;margin:0 auto;padding:18px 20px 0;box-sizing:border-box;display:flex;justify-content:flex-end;align-items:center;gap:18px;font-size:14px}
+.topbar a{color:var(--text);text-decoration:none}.topbar a:hover{color:var(--link)}
+.theme-toggle{border:0;background:transparent;color:var(--text);cursor:pointer;font-size:19px;padding:2px 0 2px 4px}
+.profile-placeholder,.work-placeholder{background:var(--box);border:1px solid var(--border);color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center;box-sizing:border-box}
+.profile-placeholder{width:100%;aspect-ratio:1/1;border-radius:50%}.work-placeholder{width:100%;height:150px}
+.work-tags{color:var(--muted)}
+@media(max-width:600px){.topbar{justify-content:center;gap:14px}.profile-row,.profile-row tbody,.profile-row tr,.profile-row td{display:block;width:100%!important;max-width:100%!important}.profile-photo-cell{width:52%!important;max-width:220px!important;margin:0 auto}}
+
+
+.work-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.6 / 1;
+  overflow: hidden;
+}
+
+.work-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.work-image-hover {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.work-image-container:hover .work-image-hover {
+  opacity: 1;
+}
+
+
+
+
+</style>
+<script>
+(function(){const t=localStorage.getItem('theme');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')})();
+</script>
+</head>
+<body>
+<nav class="topbar" aria-label="Primary navigation">
+<a href="index.html">Home</a>
+<a href="publications.html">Publications</a>
+<a href="data/Jack_Peters_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch color theme">&#9728;</button>
+</nav>
+
+<table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:auto"><tbody><tr><td style="padding:0">
+
+<table class="profile-row" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto"><tbody><tr>
+<td style="padding:2.5%;width:65%;vertical-align:middle">
+<p class="name" style="text-align:center">Jack Peters</p>
+<p>I'm a robotics engineer and Ph.D. candidate at Vanderbilt University, where I work in the MEDLab and C* Controls Lab on the design, modeling, and control of robotic systems. My research focuses on continuum robotics, including MRI-compatible robots for minimally invasive neurosurgery and modern control methods for soft robots. I really enjoy exploring the different ways in which we interact with and control robotic systems and testing and refining those algorithms on hardware I've built.</p>
+<p>Before graduate school, I worked as an electrical design engineer at ASML, developing mechatronic systems for semiconductor photolithography machines. Before that, I was at Medtronic working on the Hugo&trade; robot-assisted surgery system and was an engineering student at the University of Connecticut.</p>
+<p>I hold an M.S. in Mechanical Engineering from Vanderbilt University and a B.S.E. from the University of Connecticut, where I double majored in Electrical Engineering and Biomedical Engineering. I will defend my Ph.D. dissertation in Mechanical Engineering in December 2026.</p>
+<p style="text-align:center"><a href="mailto:jackpeters06798@gmail.com">Email</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/jackpetersmsd/" target="_blank" rel="noopener">LinkedIn</a></p>
+</td>
+<td class="profile-photo-cell" style="padding:2.5%;width:35%;max-width:35%;vertical-align:middle"><div class="profile-placeholder">Headshot / Photo</div></td>
+</tr></tbody></table>
+
+<table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto"><tbody><tr><td style="padding:16px;width:100%;vertical-align:middle"><h2>Selected Work</h2></td></tr></tbody></table>
+
+<table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:auto"><tbody>
+
+
+<tr>
+<td style="padding:16px;width:45%;vertical-align:middle">
+  <div class="work-image-container">
+    <img
+      src="images/mri_robot/Fig1.png"
+      alt="Illustration of the transforaminal curvilinear approach to the hippocampus"
+      class="work-image">
+
+    <img
+      src="images/mri_robot/Fig2.png"
+      alt="MRI-compatible robotic system and experimental setup"
+      class="work-image work-image-hover">
+  </div>
+</td>
+<td style="padding:8px;width:55%;vertical-align:middle">
+  <span class="papertitle">An MRI-Guided Robotic System to Improve Hippocampal Access for Epilepsy Interventions</span><br>
+  <strong>John E. Peters</strong>, Abby M. Grillo, Mahshid Mansouri, Daniel S. Esser, Sarah Garrow, Nithin S. Kumar, William A. Grissom, Dario J. Englot, Joseph S. Neimat, Robert J. Webster III, Eric J. Barth
+  <br><em class="work-tags">Annals of Biomedical Engineering. In review.</em>
+  <br><a href="https://arxiv.org/abs/2609.13572" target="_blank" rel="noopener">arXiv:2609.13572</a>
+  <p>Designed and experimentally validated a compact 6-DOF, MRI-compatible robotic system for minimally invasive neurosurgery. 
+    This system was designed to improval hippocampal access, a common seizure source in drug-resistant epilepsy, by delivering
+    a curved needle-like laser ablator through a natural opening in the skull base. Both the delivery path and the curved nature
+    of the needle improve upon current clinical straight-line laser interstitial thermal therapy (LITT) as measured by 
+    hippocampal cannulation percentage. In MRI-guided experiments, we achieved a mean cannulation percentage of 83.5% exceeding
+    reported clinical averages of 50-60%. Seizure control is believed by physicians to be a function of hippocampal
+    volume treated, and our system provides a means of treating a greater volume of the hippocampus with LITT-based interventions.</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:16px;width:25%;vertical-align:middle"><div class="work-placeholder">directional MRgLITT<br>image / video</div></td>
+<td style="padding:8px;width:75%;vertical-align:middle">
+  <span class="papertitle">Conforming to Curvature: Improving Hippocampal Ablation Coverage with Robotic, Curvilinear, Directional MRgLITT</span><br>
+  <strong>John E. Peters</strong>, Nithin S. Kumar, Abby Grillo, Mahshid Mansouri, Saikat Sengupta, Sarah Garrow, Kerrin Sunshine, William A. Grissom, Robert J. Webster III, Eric J. Barth
+  <br><em class="work-tags">IEEE Transactions on Biomedical Engineering. In preparation.</em>
+  <p>In this work we extended the neurosurgical robot from curved needle delivery to conformal therapy by integrating a
+    directional laser probe and real-time MR thermometry monitoring. This enabled us to achieve 84.2% mean hippocampal ablation
+    coverage versus the reported 56% clinical average in tissue-mimicking phantoms.</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:16px;width:25%;vertical-align:middle"><div class="work-placeholder">cadaver workflow<br>image / video</div></td>
+<td style="padding:8px;width:75%;vertical-align:middle">
+  <span class="papertitle">MR-Guided Robotic Transforaminal Laser Interstitial Thermal Therapy for Epilepsy: Initial In-Scanner Cadaver Experience</span><br>
+  Abby Grillo, <strong>John E. Peters</strong>, Mahshid Mansouri, Sarah Garrow, Kerrin Sunshine, Michael Staudt, Anuj Sharma, William A. Grissom, Eric J. Barth, Robert J. Webster III
+  <br><em class="work-tags">IEEE Transactions on Biomedical Engineering. In review.</em>
+  <p>In this research, we took a step towards clinical translation of our system by testing our envisioned robotic workflow in 
+    human cadavers. This involved end-to-end validation of the research in a clinical setting with clinician stakeholders at every
+    step.</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:16px;width:25%;vertical-align:middle"><div class="work-placeholder">wheeled soft robot<br>image / video</div></td>
+<td style="padding:8px;width:75%;vertical-align:middle">
+  <span class="papertitle">Constrained Lagrangian-Based, Nonholonomic Modeling and Validation of a Pneumatically Actuated Wheeled Soft Robot</span><br>
+  Nithin S. Kumar, <strong>John E. Peters</strong>, Sung Y. Kim, Joshua Gaston, D. Caleb Rucker, Eric J. Barth
+  <br><em class="work-tags">Journal of Mechanisms and Robotics. Published. 2026.</em>
+  <p>In this work, we designed a pneumatically actuated, wheeled soft robot and a constrained, Lagrangian-based model to accurately
+    capture its highly dynamic, non-holonomic locomotion. The robot achieved speeds up to 22 cm/s (1.38 body lengths/s) and demonstrated
+    forward, reverse, and circular locomotion. The modeling framework was validated across three different designs, accurately
+    reproducing their experimentally observed configuration and velocity trends.</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:16px;width:25%;vertical-align:middle"><div class="work-placeholder">CTR teleoperation<br>GIF / video</div></td>
+<td style="padding:8px;width:75%;vertical-align:middle">
+  <span class="papertitle">Open-Source Concentric Tube Robot Simulation &amp; Teleoperation</span><br>
+  <strong>John E. Peters</strong>.
+  <br><em class="work-tags">Independent Project &middot; Python &middot; ROS2 &middot; Git</em>
+  <br><a href="https://github.com/JackyP1937/ctr-sim" target="_blank" rel="noopener">GitHub</a>
+  <p>In this work, I developed an open-source simulation and control framework for concentric tube robots using ROS2/Python.
+    This involved implementation of Cosserat-rod Newtonian mechanics, tube-torsion modeling, and kinematic control. Real-time
+    task-space teleoperation using an Xbox controller was achieved using a resolved-rates/IK approach and online,
+    warm-started Jacobian computation. The robot is visualized in RViz as the user inputs tip velocity commands via
+    the controller joystick. I organized the simulator as a modular ROS2 package separating out mechanics,
+    kinematics, controls, and visualization, and included automated testing as well as Git version control.</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:16px;width:25%;vertical-align:middle"><div class="work-placeholder">pneumatic soft actuator<br>image / video</div></td>
+<td style="padding:8px;width:75%;vertical-align:middle">
+  <span class="papertitle">Data-driven Dynamic Modeling and Control of Pneumatic Soft Actuators with Stability Analysis</span><br>
+  Nithin S. Kumar, <strong>John E. Peters</strong>, Thomas Beckers, Eric J. Barth.
+  <br><em class="work-tags">ASME Letters in Dynamic Systems and Control. Accepted. 2026.</em>
+  <p> Continuum robots offer inherent compliance and dexterity, but their nonlinear deformation and coupled actuation make
+    accurate modeling and task-space control challenging. This work developed a data-driven modeling and control framework
+    for pneumatically actuated, soft robots.  Using experimentally learned, nonlinear feedforward maps combined with
+    EDMDc residual dynamics we achieved 2 mm RMSE positional control of the robot tip. This was demonstrated on shape rich
+    trajectories with less than 10 mm RMSE at tip speeds exceeding 100 mm/s. The learned model also enables closed-loop
+    stability prediction without requiring an explicit first-principles dynamic model.</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:16px;width:25%;vertical-align:middle"><div class="work-placeholder">tendon-driven robot<br>image / video</div></td>
+<td style="padding:8px;width:75%;vertical-align:middle">
+  <span class="papertitle">Real-Time Data-Driven Task-Space Control of Tendon-Drive Continuum Robots</span><br>
+  Nithin S. Kumar, <strong>John E. Peters</strong>, Eric J. Barth.
+  <br><em class="work-tags">ASME/IEEE Transactions on Mechatronics. In preparation.</em>
+  <p>This work extended our previous data-driven approach to 3D task space control of tendon-driven continuum robots. A novel
+    modeling and control framework was developed for these robots, learning static mappings from actuator commands to tip 
+    position and orientation from just 600 s of experimental data. The learned models are exploited for optimization-based
+    feedforward inversion and Jacobian feedback, enabling real-time millimeter-scale tracking without an explicit 
+    mechanics-based model. These results demonstrate that learned static input-output models provide an accurate and
+    computationally efficient foundation for real-time continuum-robot task-space control.</p>
+</td>
+</tr>
+</tbody></table>
+
+<table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto"><tbody><tr><td style="padding:16px"><p style="text-align:right;font-size:small">Website template adapted from <a href="https://jonbarron.info/" target="_blank" rel="noopener">Jon Barron</a>.</p></td></tr></tbody></table>
+
+</td></tr></tbody></table>
+<script>
+const b=document.getElementById('theme-toggle');
+function sync(){const d=document.documentElement.getAttribute('data-theme')!=='light';b.innerHTML=d?'&#9728;':'&#9790;';b.setAttribute('aria-label',d?'Switch to light mode':'Switch to dark mode')}
+b.addEventListener('click',()=>{const n=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);sync()});sync();
+</script>
+</body></html>
